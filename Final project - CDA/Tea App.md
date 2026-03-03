@@ -1,0 +1,15 @@
+#### Fonctionnalités :
+- Compte (login/register)
+- Page de profil (dashboard)
+- Page avec la liste des différentes recettes de thé (homepage)
+- Fonction de recherche par catégorie, mots clés, saveurs, ingrédients, etc. (filtre avancé + barre de recherche // si on a le temps)
+- Fonction de tri pour l'affichage (filtre)
+- Ajout de recettes en favoris ou dans une catégorie (archiver pour plus tard ou créer sa propre catégorie comme YouTube) (page my teas)
+- Créer ses propres recettes avec liste d'ingrédients existants, accord des saveurs ou accord des ingrédients entre eux.
+- On peut modifier, supprimer ou partager des recettes (on peut aussi visualiser les recettes de la communauté)
+- On peut préparer les recettes avec une page descriptive et un timer interactif, avec les instructions nécessaires (température, temps, quantités)
+- Il sera possible d'ajouter des ingrédients dans les recettes existantes ou de modifier la recette pour ajuster selon nos préférences 
+- Il sera possible d'ajouter des ingrédients à notre base de données locale (chaque utilisateur peut "créer" ses ingrédients)
+- Ajuster les ingrédients (dosage) en fonction du nombre de verre de thé/personnes
+- Avoir un suivi de sa consommation de thé : thé à la menthe fais la dernière fois le 2 novembre (date) ou des statistiques avec le nombre de thé à la menthe consommés par exemple. Un graphique des préférences basées sur sa consommation (ex: green tea lover car c'est ce qu'on consomme le plus)
+- Futur = avoir son profil, écrire des commentaires, ajouter des étoiles sur les recettes, recommander des recettes, etc... (un peu comme une partie réseau social)
