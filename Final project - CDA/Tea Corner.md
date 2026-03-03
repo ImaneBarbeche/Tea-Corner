@@ -774,6 +774,92 @@ Transformation des relations en tables avec clés étrangères :
 ### L'interface utilisateur 
 Cette section présente les interfaces utilisateur actuellement implémentées dans l'application TeaCorner. Le développement frontend suit une approche **progressive** : les pages d'authentification sont complètes et fonctionnelles, tandis que l'interface principale de l'application est en cours de développement.
 
+#### Structure du projet
+
+![[Pasted image 20260303213025.png|300]]
+
+---
+#### Structure des routes
+
+```ts
+export default [
+
+  layout("layouts/SiteLayout.tsx", [index("routes/Home.tsx")]),
+
+  route("signup", "routes/auth/Signup.tsx"),
+  route("signin", "routes/auth/Signin.tsx"),
+
+  
+  route("app", "layouts/AppLayout.tsx", [
+    index("routes/app/Home.tsx"),
+    route("tea/:teaId", "routes/app/Tea.tsx"),
+  ]),
+] satisfies RouteConfig;
+```
+
+Le fichier `routes.ts` définit toutes les URL de l'application.
+
+**Un layout** est une page enveloppe — il contient les éléments communs (navigation, footer) et affiche la page enfant à l'intérieur. Par exemple, `AppLayout.tsx` entoure toutes les pages de l'espace connecté.
+
+**Le paramètre `:teaId`** est dynamique et utilise le composant `Tea.tsx`, qui reçoit la valeur de l'URL pour charger les bonnes données.
+#### Composants (React + Tailwind)
+
+```tsx
+import React, { type ButtonHTMLAttributes, type ReactElement } from "react";
+
+// allows the button to inherit standard button props (e.g type="submit")
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "primary" | "secondary" | "ghost";
+  size?: "small" | "medium" | "large";
+  color?: "";
+  disabled?: boolean;
+  icon?: ReactElement;
+  children: React.ReactNode;
+}
+
+export function Button({
+  variant = "primary",
+  size = "medium",
+  icon,
+  children,
+  className = "",
+  disabled,
+  ...props //spreading onClick etc
+}: ButtonProps) {
+  const variants = {
+    primary: "text-sm px-6 py-2.5 bg-primary-dark text-primary-light hover:bg-opacity-90",
+    secondary: "border-2 border-primary-dark text-primary-dark bg-transparent",
+    ghost: "bg-transparent text-primary-dark",
+  };
+
+  const sizes = {
+    small: "px-4 py-1.5 text-xs",
+    medium: "px-6 py-2.5 text-sm",
+    large: "px-8 py-3 text-base",
+  };
+
+  const baseStyles = "inline-flex items-center justify-center rounded-full font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer";
+
+  return (
+    <button
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      disabled={disabled}
+      aria-disabled={disabled}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+}
+```
+
+**Interface TypeScript** — toutes les options du bouton (`variant`, `size`...) sont déclarées dans une interface. En étendant `ButtonHTMLAttributes`, pas besoin de réécrire `onClick`, `type`, `disabled` etc. — ils sont hérités automatiquement.
+
+**Variantes** — au lieu d'enchaîner des `if/else`, chaque variante a ses classes Tailwind dans un objet. Un simple `variants[variant]` suffit pour appliquer le bon style.
+
+**Styles communs** — tout ce qui ne change pas entre les variantes (arrondi, transition, curseur...) est mis à part dans `baseStyles`, toujours appliqué.
+
+---
 #### Pages d'authentification
 
 ##### Page d'accueil (Landing Page)
