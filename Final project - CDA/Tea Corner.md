@@ -89,8 +89,8 @@ Ce projet a permis de valider les 11 compétences du référentiel CDA :
 
 TeaCorner permet aux utilisateurs de gérer leurs thés tout en étant soucieux et attentif à leur expérience.
 
-Actuellement il n'existe pas de plateforme en ligne de gestion de recette de thé qui combine toutes les fonctionnalités mentionnées ci-après en un seul endroit. Les plateformes qui existent permettent soit une gestion de type "journal" de ses propres recettes, où tout est créée
-manuellement par l'utilisateur, soit une visualisation de recettes de thés, d'accès à un minuteur et de communauté. D'autres proposent uniquement l'aspect méditatif lié à la consommation de thé. De plus, aucune plateforme web n'existe, celles mentionnées ci-dessus sont des applications mobiles. Les seules plateforme de gestion d'infusion de thé sont de simples minuteurs.
+Actuellement il n'existe pas de plateforme en ligne de gestion de recette de thé qui combine toutes les fonctionnalités mentionnées ci-après en un seul endroit. Les plateformes qui existent permettent soit une gestion de type "journal" de ses propres recettes, où tout est créé
+manuellement par l'utilisateur, soit une visualisation de recettes de thés, d'accès à un minuteur et de communauté. D'autres proposent uniquement l'aspect méditatif lié à la consommation de thé. De plus, aucune plateforme web n'existe, celles mentionnées ci-dessus sont des applications mobiles. Les seules plateformes de gestion d'infusion de thé sont de simples minuteurs.
 
 Notre application permet de réunir toutes ces fonctionnalités en un site web, tout en apportant la possibilité pour l'utilisateur de personnaliser son expérience.
 
@@ -244,14 +244,14 @@ Le projet TeaCorner pourrait évoluer vers une **plateforme communautaire compl�
 
 ### Le planning et suivi 
 
-Ce projet a été réalisé en 7 semaines, nous avons donc mis en place un planning strict, semaine par semaine sur Notion. Nous avons partager la charge de travail tout en gardant un oeil sur le développement de chacun et en effectuant des réunions journalières. En début de journée, nous faisions le point sur la veille et les avancées du projet, en fin de journée, nous faisions un bilan de la journée. 
-Nous utilisions Whimsical pour le suivi du projet sous forme de tickets, ce qui nous permettait aussi de noter les points bloquants ou les éléments que nous voudrions aborder a la réunion suivante.
+Ce projet a été réalisé en 7 semaines, nous avons donc mis en place un planning strict, semaine par semaine sur Notion. Nous avons partagé la charge de travail tout en gardant un oeil sur le développement de chacun et en effectuant des réunions journalières. En début de journée, nous faisions le point sur la veille et les avancées du projet, en fin de journée, nous faisions un bilan de la journée. 
+Nous utilisions Whimsical pour le suivi du projet sous forme de tickets, ce qui nous permettait aussi de noter les points bloquants ou les éléments que nous voudrions aborder à la réunion suivante.
 
 ### L'environnement de développement
 
-Nous avons utilisé Visual Studio Code pour l'IDE qui est un choix populaire pour le développement mais aussi un choix de comfort car c'est celui avec lequel nous nous sommes formés. Pour la gestion des versions nous utilisons Git avec GitHub, qui nous permet un bon suivi des différents changements de code et pouvoir s'organiser.
+Nous avons utilisé Visual Studio Code pour l'IDE qui est un choix populaire pour le développement mais aussi un choix de confort car c'est celui avec lequel nous nous sommes formés. Pour la gestion des versions nous utilisons Git avec GitHub, qui nous permet un bon suivi des différents changements de code et pouvoir s'organiser.
 
-Nous avons utiliser GitHub également pour la création de pipeline CI/CD (GitHub actions). Pour la planification des tâches nous avons choisi Whimsical pour les tickets et Notion pour le planning général et le partage de ressources. Ces deux choix sont motivés par l'expérience antérieur que nous avions avec et leur facilité d'utilisation et modularité.
+Nous avons utilisé GitHub également pour la création de pipeline CI/CD (GitHub actions). Pour la planification des tâches nous avons choisi Whimsical pour les tickets et Notion pour le planning général et le partage de ressources. Ces deux choix sont motivés par l'expérience antérieure que nous avions avec et leur facilité d'utilisation et modularité.
 
 --- 
 
@@ -335,9 +335,9 @@ En tant qu'administrateur, je souhaite avoir accès à la liste de tous les util
 ***Utilisateur:***
 
 1. En tant que visiteur, je souhaite accéder à l'application afin de découvrir différents mélanges de thé proposés par défaut (système).
-2. En tant que visiteur, je souhaite accéder à l'application afin de pouvoir utiliser un minuteur classique pour infusé un thé, tout en ayant la possibilité de modifier les paramêtres d'infusion.
+2. En tant que visiteur, je souhaite accéder à l'application afin de pouvoir utiliser un minuteur classique pour infuser un thé, tout en ayant la possibilité de modifier les paramètres d'infusion.
 3. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de découvrir différents mélanges de thé.
-4. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de pourvoir enregistrer dans ma librairie les thés qui m'intéressent.
+4. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de pouvoir enregistrer dans ma librairie les thés qui m'intéressent.
 5. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de pouvoir créer et éditer mes propres mélanges de thé et les partager avec la communauté.
 6. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de pouvoir enregistrer mes dégustations et les partager avec la communauté.
 7. En tant qu'utilisateur, je souhaite m'inscrire ou me connecter afin de pouvoir utiliser le minuteur en mode classique ou en mode concentration pour pouvoir apprécier mon thé tout en ayant une approche méditative et rituelle.
@@ -554,7 +554,7 @@ Les maquettes de TeaCorner ont été réalisées sur Figma pour définir l'ident
 
 #### Recherche
 
-Avant de commencer notre maquette, on a passé quelques jours à faire des recherches pour avoir de l'inspiration sur les différentes pages (connexion, inscription, dashboard, etc.). On a aussi essayer des applications de thé existantes pour s'en inspirer (myTeaPal, Teafinity, Steeped) et voir ce qui existe sur le marché au niveau du design et des fonctionnalités. Cela nous a permis de voir ce qui existe, ce qui fonctionne et ce qui pourrais être amélioré, tout cela dans le but de créer quelque chose qui nous ressemble et qui est accessible pour l'utilisateur.
+Avant de commencer notre maquette, on a passé quelques jours à faire des recherches pour avoir de l'inspiration sur les différentes pages (connexion, inscription, dashboard, etc.). On a aussi essayé des applications de thé existantes pour s'en inspirer (myTeaPal, Teafinity, Steeped) et voir ce qui existe sur le marché au niveau du design et des fonctionnalités. Cela nous a permis de voir ce qui existe, ce qui fonctionne et ce qui pourrait être amélioré, tout cela dans le but de créer quelque chose qui nous ressemble et qui est accessible pour l'utilisateur.
 
 #### 1. Vue d'ensemble du projet Figma
 
@@ -570,7 +570,7 @@ Avant de commencer notre maquette, on a passé quelques jours à faire des reche
 ![[Pasted image 20260224085758.png]]
 
 **Concept :**
-Ce logo a été imaginer afin de représenter **l'essence de Tea Corner.** 
+Ce logo a été imaginé afin de représenter **l'essence de Tea Corner.** 
 
 **Symbolique des éléments :**
 
@@ -597,7 +597,7 @@ La couleur jaune représente la chaleur et le réconfort. L'aspect chaleureux es
 ##### Typographie
 
 **Choix typographiques :**
-- **Police principale** : Alice - Une police moderne, basée sur un style rétro, qui fais ressortir les thés.
+- **Police principale** : Alice - Une police moderne, basée sur un style rétro, qui fait ressortir les thés.
 - **Police secondaire** : Inter - Une police très utilisée dans les interfaces utilisateur pour sa simplicité et lisibilité. 
 - **Hiérarchie claire** : Différenciation tailles et poids pour guider l'œil
 - **Accessibilité** : Taille minimale 14px pour confort de lecture
@@ -608,7 +608,7 @@ La couleur jaune représente la chaleur et le réconfort. L'aspect chaleureux es
 
 La bibliothèque de composants Figma garantit la cohérence visuelle et accélère la conception. Cela permet aussi d'aborder le développement du frontend de manière plus organisée et modulaire. 
 
-Plusieurs composants génériques ont été crées, comme les boutons, les champs de saisies, les étiquettes de texte, la barre de navigation mobile et desktop mais aussi des composants plus spécifiques au thé comme l'étiquette pour les thés, le minuteur, les cartes de brew log, les étiquettes d'ingrédients et de profile de saveurs, etc.
+Plusieurs composants génériques ont été créés, comme les boutons, les champs de saisies, les étiquettes de texte, la barre de navigation mobile et desktop mais aussi des composants plus spécifiques au thé comme l'étiquette pour les thés, le minuteur, les cartes de brew log, les étiquettes d'ingrédients et de profile de saveurs, etc.
 
 ##### Vue d'ensemble des composants
 
@@ -647,7 +647,7 @@ Plusieurs composants génériques ont été crées, comme les boutons, les champ
 
 ![[Pasted image 20260301224008.png|235]]
 
-##### Interface application - Paramêtres compte
+##### Interface application - Paramètres compte
 
 ![[Pasted image 20260301224101.png]]
 
@@ -655,7 +655,7 @@ Plusieurs composants génériques ont été crées, comme les boutons, les champ
 
 #### 5. Prototypage et navigation
 
-Le prototype Figma permet de **tester le parcours utilisateur** avant développement. Cela permet d'identifier les ajustements nécessaires sur le design ou les fonctionnalités. Nous avons prototype les différentes pages du flux utilisateur mais aussi les composants, comme les barres de navigation, ou le flux de création d'un log. 
+Le prototype Figma permet de **tester le parcours utilisateur** avant développement. Cela permet d'identifier les ajustements nécessaires sur le design ou les fonctionnalités. Nous avons prototypé les différentes pages du flux utilisateur mais aussi les composants, comme les barres de navigation, ou le flux de création d'un log. 
 ##### Prototype de la barre de navigation mobile
 
 ![[image (5).webp]]
@@ -2133,7 +2133,7 @@ Ce test d'intégration valide plusieurs aspects critiques de la sécurité :
 
 En complément des tests automatisés, des tests manuels ont été effectués via Postman pour valider les flux utilisateur complets et s'assurer que l'API fonctionne correctement de bout en bout.
 
-#### 3.1. Scénarios testés manuellement (sous forme de tableau?)
+#### 3.1. Scénarios testés manuellement
 
 - **Flux d'inscription et connexion**
     - Inscription d'un nouvel utilisateur
@@ -2307,7 +2307,7 @@ async validateUser(username: string, pass: string): Promise<any> {
 - Utilisés dans des attaques CSRF (Cross-Site Request Forgery)
 #### Solution mise en œuvre
 
-**Cookies sécurisés : Stockage des tokens JWT et refresh tokens dans des cookies httpOnly avec attributs de sécurité.
+**Cookies sécurisés :** Stockage des tokens JWT et refresh tokens dans des cookies httpOnly avec attributs de sécurité.
 
 **Implémentation :**
 
