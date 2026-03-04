@@ -4,9 +4,9 @@
 
 **Auteurs: Georgios Daris, Imane Barbeche**
 
-**Nom: Barbeche**
+**Nom: Daris**
 
-**Prénom: Imane**
+**Prénom: Georgios**
 
 **Tea Corner**
 
@@ -14,7 +14,7 @@
 
  *NestJs / React avec React Router*
 
-*Promo Java/Angular - 2025/2026*
+*Promo Full Stack  - 2025/2026*
 
 *Simplon.co, Grenoble*
 
@@ -42,7 +42,7 @@ Je tiens à remercier :
 
 **Ma famille et mes proches**, pour leur soutien et leur patience durant cette reconversion professionnelle.
 
-**George**, mon binôme de projet, pour sa collaboration tout au long de ce projet, pour sa patience et sa bienveillance. 
+**Imane**, mon binôme de projet, pour sa collaboration tout au long de ce projet, pour sa patience et sa bienveillance. 
 
 **Marlène Villanova, Benjamin Fontaine** et **l'équipe STORIES** au LIG pour leur patience, leur soutien et leurs conseils durant ma période de stage. Leurs encouragements et leur confiance m'ont permis de monter en compétence. 
 
@@ -55,7 +55,7 @@ Les **formateurs** à Simplon qui ont fait un effort d'accompagnement pour les d
 
 TeaCorner est une application web full‑stack dédiée à la gestion et à la découverte du thé. Elle permet aux utilisateurs d’organiser leur collection, d’explorer de nouvelles saveurs et de créer leurs propres mélanges dans une interface pensée comme un espace apaisant, en cohérence avec le rituel du thé. Le projet est fictif et a été réalisé exclusivement dans le cadre de l’examen final.
 
-Ce travail a été mené dans un délai restreint de cinq semaines, ce qui a nécessité une planification rigoureuse et une priorisation stricte des fonctionnalités. L’objectif principal était d’apprendre de nouvelles technologies tout en consolidant les compétences du parcours CDA. J’ai choisi NestJS pour rester dans l’écosystème TypeScript que je maîtrise déjà (via Angular), tout en explorant un framework backend moderne. React et React Router ont été retenus pour leur popularité en entreprise et pour renforcer mes bases en développement frontend.
+Ce travail a été mené dans un délai restreint de cinq semaines, ce qui a nécessité une planification rigoureuse et une priorisation stricte des fonctionnalités. L’objectif principal était d’apprendre de nouvelles technologies tout en consolidant les compétences du parcours CDA. J’ai choisi NestJS pour rester dans l’écosystème TypeScript que je maîtrise déjà, tout en explorant un framework backend moderne. React et React Router ont été retenus pour leur popularité en entreprise et pour renforcer mes bases en développement frontend.
 
 Le projet m’a permis d’approfondir des aspects essentiels du développement logiciel : architecture backend, modélisation de données, sécurisation de l’authentification, mise en place d’un pipeline CI/CD et utilisation de Docker. Ces éléments ont constitué les principaux défis techniques, notamment la gestion des rôles, la protection des routes, la configuration des conteneurs et l’automatisation du déploiement.
 
@@ -499,7 +499,6 @@ Après avoir étudié PHP (Symfony) et Java (Spring) durant la formation, nous s
 - **Documentation claire** : Guide officiel très complet, nombreux exemples
 - **Architecture structurée** : Modules, services, controllers imposent une organisation claire (utile en binôme)
 - **Rapidité de développement** : Intégration native avec TypeORM, Swagger, class-validator
-- **Expérience préalable** : Similarité avec Angular (déjà utilisé) facilite l'apprentissage
 
 NestJS offrait un bon compromis entre **structure imposée** (maintenabilité) et **rapidité de mise en œuvre** compte tenu des 7 semaines du projet.
 
@@ -537,7 +536,7 @@ PostgreSQL offrait les fonctionnalités nécessaires avec une courbe d'apprentis
 #### Frontend : React
 
 **Contexte du choix :**
-Nous avions déjà une expérience avec Angular durant la formation. React a été choisi pour élargir nos compétences frontend et répondre à des objectifs professionnels.
+React a été choisi pour élargir nos compétences frontend et répondre à des objectifs professionnels.
 
 **Critères de décision :**
 - **Employabilité** : React très demandé sur le marché du travail
