@@ -3305,29 +3305,24 @@ VITE_API_URL=https://tea-corner-backend.onrender.com
 
 **Workflow automatique (pas de fichier YAML nécessaire) :**
 
-┌──────────────┐
-│  git push    │
-│  to main     │
-└──────┬───────┘
-       │
-       ▼
-┌────────────────────────────────┐
-│   Vercel (automatique)         │
-│                                │
-│  1. Détection du push GitHub  │
-│  2. Clone du repository        │
-│  3. Installation deps (npm)    │
-│  4. Build Vite                 │
-│  5. Optimisation bundle        │
-│  6. Déploiement sur CDN        │
-│  7. Invalidation cache         │
-└──────────────┬─────────────────┘
-               │
-               ▼
-       ┌───────────────────┐
-       │  Vercel Edge CDN     │
-       │  Production live        │ 
-       └───────────────────┘
+```mermaid
+flowchart TD
+    GH["GitHub Repository"] -->|webhook automatique| E{Événement}
+
+    E -->|push sur main| v1
+    E -->|pull request| v1
+
+    subgraph V ["Vercel CI/CD - Automatique"]
+        v1["1. Clone du repository"] --> v2["2. Installation des dépendances (npm)"]
+        v2 --> v3["3. Build Vite - npm run build"]
+        v3 --> v4["4. Optimisation bundle (minif., tree-shaking)"]
+        v4 --> v5["5. Déploiement sur Edge Network"]
+        v5 --> v6["6. Invalidation du cache global"]
+    end
+
+    v6 -->|push sur main| PROD["Production<br/>tea-corner-frontend.vercel.app"]
+    v6 -->|pull request| PREV["Preview Deployment<br/>pr-xx.vercel.app"]
+```
 
 **Durée estimée du déploiement :** ~1-2 minutes du push à la mise en ligne
 
