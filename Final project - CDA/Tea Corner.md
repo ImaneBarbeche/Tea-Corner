@@ -772,8 +772,7 @@ Transformation des relations en tables avec clés étrangères :
 ## Les réalisations
 
 ### L'interface utilisateur 
-Cette section présente les interfaces utilisateur actuellement implémentées dans l'application TeaCorner. Le développement frontend suit une approche **progressive** : les pages d'authentification sont complètes et fonctionnelles, tandis que l'interface principale de l'application est en cours de développement.
-
+Cette section présente les interfaces utilisateur actuellement implémentées dans l'application TeaCorner. Le développement frontend suit une approche **progressive**.
 #### Structure du projet
 
 ![[Pasted image 20260303213025.png|300]]
